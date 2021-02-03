@@ -31,7 +31,7 @@ public class ThreadAsyncService {
      * @throws InterruptedException
      */
     @Async
-    public ListenableFuture<String> latelyGreetingException(String name) throws InterruptedException{
+    public ListenableFuture<String> latelyGreetingException() throws InterruptedException{
         log.info("ListenableFuter Method 내부");
         Thread.sleep(5000); // 5초
         throw new InterruptedException();

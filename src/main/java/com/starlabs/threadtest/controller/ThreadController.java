@@ -57,8 +57,8 @@ public class ThreadController {
      * @throws InterruptedException
      */
     @GetMapping(value = "/test/exception")
-    public void testExcpt(@RequestParam String name) throws InterruptedException {
-         threadService.testExcpt(name);
+    public void testExcpt() throws InterruptedException {
+         threadService.testExcpt();
     }
 
     /**

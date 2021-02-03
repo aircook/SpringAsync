@@ -71,9 +71,9 @@ public class ThreadService {
      * @param name
      * @throws InterruptedException
      */
-    public void testExcpt(String name) throws InterruptedException {
+    public void testExcpt() throws InterruptedException {
         log.info("서비스 호출");
-        threadAsyncService.latelyGreetingException(name).addCallback(
+        threadAsyncService.latelyGreetingException().addCallback(
                 (result) -> {
                     log.info("callback's result is {}",result);
                 }, (e) ->{
