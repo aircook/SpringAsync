@@ -23,9 +23,9 @@ public class AsyncConfig {
     public Executor asyncThreadTaskExecutor(){
         ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
         // 쓰레드풀일 해당 개수까지 기본적으로 생성한다. 처음 요청이 들어올때 PoolSize만큼 생성
-        taskExecutor.setCorePoolSize(8);
+        taskExecutor.setCorePoolSize(100);
         // Core스레드를 모두 사용중일때, 큐에 만들어 대기시킨다.
-        taskExecutor.setQueueCapacity(50);
+        taskExecutor.setQueueCapacity(5000);
         // 대기작업이 큐에 꽉 찰 경우, 풀을 해당계수까지 더 생성한다.
         taskExecutor.setMaxPoolSize(100);
         taskExecutor.setThreadNamePrefix("donghyeon-pool");
