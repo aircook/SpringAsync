@@ -72,5 +72,4 @@ public class ThreadController {
         log.info("컨트롤러 심플텍스트 출력");
     }
 
-
 }

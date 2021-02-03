@@ -2,12 +2,8 @@ package com.starlabs.threadtest.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
-import org.springframework.util.concurrent.ListenableFuture;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -88,14 +84,4 @@ public class ThreadService {
 
         log.info("End of Service");
     }
-
-
-
-    /**
-     * completableFuter 테스트
-     */
-//    public testcptbFuter() throw Exception{
-//        CompletableFuture.runasy
-//
-//    }
 }

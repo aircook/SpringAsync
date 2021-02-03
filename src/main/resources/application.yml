@@ -3,4 +3,5 @@ spring:
     execution:
       pool:
         core-size: 8
-        max-size: 8
+        max-size: 100
+        queue-capacity: 50
