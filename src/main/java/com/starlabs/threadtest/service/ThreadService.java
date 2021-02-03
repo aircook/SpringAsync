@@ -68,7 +68,6 @@ public class ThreadService {
 
     /**
      * ListenableFutere Exception 테스트
-     * @param name
      * @throws InterruptedException
      */
     public void testExcpt() throws InterruptedException {

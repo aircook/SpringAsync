@@ -26,7 +26,6 @@ public class ThreadAsyncService {
 
     /**
      * 비동기 서비스 5초 후 Exception 반환
-     * @param name
      * @return
      * @throws InterruptedException
      */

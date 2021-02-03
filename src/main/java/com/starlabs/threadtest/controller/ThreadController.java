@@ -53,7 +53,6 @@ public class ThreadController {
 
     /**
      * ListenableFutere Exception 테스트
-     * @param name
      * @throws InterruptedException
      */
     @GetMapping(value = "/test/exception")
