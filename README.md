@@ -8,7 +8,7 @@ GET http://localhost:8080/thread/test1
 GET http://localhost:8080/thread/test2
 
 ### ListenableFutere 성공 테스트 (5초 후 문자열 반환)
-GET http://localhost:8080/thread/test?name="박동현" 
+GET http://localhost:8080/thread/test?name=박동현
 
 ### ListenableFuter Exception 테스트 (5초 후 Exception 반환)
 GET http://localhost:8080/thread/test/exception
